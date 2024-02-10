@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Time.deltaTime
 
+        // Jump
         if (Input.GetKeyDown(KeyCode.W) && (isGrounded() || doublejumps >= 1))
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump);
@@ -55,10 +56,16 @@ public class PlayerMovement : MonoBehaviour
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
         }
 
-        //stops the sliding
-        if ((rigidbody2d.velocity.x < speed && rigidbody2d.velocity.x > 0) || (rigidbody2d.velocity.x > -speed && rigidbody2d.velocity.x < 0))
+        //stops the sliding a bit on ground
+        if (isGrounded() && (rigidbody2d.velocity.x < 1f && rigidbody2d.velocity.x > 0) || (rigidbody2d.velocity.x > -1f && rigidbody2d.velocity.x < 0))
         {
             rigidbody2d.velocity = new Vector2(0, rigidbody2d.velocity.y);
+        }
+
+        //stops momentum in the air if you dont hold a direction
+        if (!isGrounded() && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x * 0.98f, rigidbody2d.velocity.y);
         }
 
         // limit the number of jumps
