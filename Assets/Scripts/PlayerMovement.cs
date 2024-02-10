@@ -80,10 +80,10 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
-
+    
     bool isGrounded()
     {
-        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 3f, Ground_layermask);        
+        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.7f, Ground_layermask);    
         return raycasthit2d.collider != null;
     }
 
