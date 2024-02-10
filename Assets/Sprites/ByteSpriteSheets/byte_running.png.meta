@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c0a65fa64598424299997763a622d5d
+guid: 3a285e943a306e040b15ba33972d8e3a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW(1)_0
+      name: byte_running_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5abf9557067f13442a65918d7a89bd77
-      internalID: -1258215740
+      spriteID: 51cb5b8487b769c4ea424558588e3c1d
+      internalID: 1216503226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW(1)_1
+      name: byte_running_1
       rect:
         serializedVersion: 2
         x: 32
@@ -140,14 +140,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb9cd3f0e1513554ca31b646010aac60
-      internalID: -2037491084
+      spriteID: 7e388f95411bf03418332ddeee4b3cd4
+      internalID: 2053498388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW(1)_2
+      name: byte_running_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242046ff4f79fce43b7e242acf5ef278
+      internalID: -596243875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byte_running_3
       rect:
         serializedVersion: 2
         x: 0
@@ -161,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 790259ed99a50144baa988ca427cc558
-      internalID: -428353399
+      spriteID: 4fd2f766b91ea2d46ab49e667eb8be3b
+      internalID: 215288758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW(1)_3
+      name: byte_running_4
       rect:
         serializedVersion: 2
         x: 32
@@ -182,14 +203,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ff5f5b2a971cc4196f29b4dfe1f55a
-      internalID: -1102527098
+      spriteID: ca5e382f1db12f9438845c9f7f812263
+      internalID: 1804430325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW(1)_4
+      name: byte_running_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdfcc520bf09de468dcc92937e91951
+      internalID: 1390166397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: byte_running_6
       rect:
         serializedVersion: 2
         x: 0
@@ -203,29 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 459a45b9409eb0642a5a2b9eddc277de
-      internalID: -1474955609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW(1)_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ada8c0cf416b144da4493edc486d774
-      internalID: 1105729376
+      spriteID: 6def9a14f1393c048851701ed9b90cf8
+      internalID: -811435492
       vertices: []
       indices: 
       edges: []
@@ -241,12 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PIXEL ON YOU, PIXEL ON YOUR COW(1)_1: -2037491084
-      PIXEL ON YOU, PIXEL ON YOUR COW(1)_2: -428353399
-      PIXEL ON YOU, PIXEL ON YOUR COW(1)_4: -1474955609
-      PIXEL ON YOU, PIXEL ON YOUR COW(1)_0: -1258215740
-      PIXEL ON YOU, PIXEL ON YOUR COW(1)_5: 1105729376
-      PIXEL ON YOU, PIXEL ON YOUR COW(1)_3: -1102527098
+      byte_running_4: 1804430325
+      byte_running_0: 1216503226
+      byte_running_1: 2053498388
+      byte_running_5: 1390166397
+      byte_running_2: -596243875
+      byte_running_6: -811435492
+      byte_running_3: 215288758
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 221275031ac65924c995abf01d7960aa
+guid: c70fbe9737a36694481ecc4abb4dec44
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,112 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21067a380f09be24bb9f03b4145f1c21
-      internalID: 1303742996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32efda8f37e69244eb77c9a7a2a705d5
-      internalID: -968078472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8642da0195752144b9658a52db0983d1
-      internalID: -1379312205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27901ab2be129224ea269e2fad40bf7b
-      internalID: 307824893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8b668b0087536d4c9e6ded8bab26af0
-      internalID: 759735323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_5
+      name: bug_attack 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -224,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825903d5597432245b0c72c3b059af20
-      internalID: -1489695145
+      spriteID: d23c2f0ba29a2d042b2a38ad97c79f1e
+      internalID: 1848460232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_6
+      name: bug_attack 1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -245,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 478d0a3618e856545906e9d4929f465b
-      internalID: 1177563277
+      spriteID: c2617444519d40b448e79786abadf96c
+      internalID: 517374183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_7
+      name: bug_attack 1_2
       rect:
         serializedVersion: 2
         x: 64
@@ -266,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4424b93b056dbc34f9747499a53f1db5
-      internalID: 1785381909
+      spriteID: 02f2afd57886a4a46a4b14daeaa008b5
+      internalID: -1758828521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_8
+      name: bug_attack 1_3
       rect:
         serializedVersion: 2
         x: 96
@@ -287,35 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b490381a53e232469ab60cf9e1655d6
-      internalID: 575454503
+      spriteID: 75a7cff1daed11a41861bb8462705da9
+      internalID: -1900596123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bdf63b8a17e29f488f0f75e4199451b
-      internalID: -1405294023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_10
+      name: bug_attack 1_4
       rect:
         serializedVersion: 2
         x: 0
@@ -329,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14c167f86606a3d46860adf383470861
-      internalID: -935981779
+      spriteID: 9a2960b8f5380cf459270cf8cb83421f
+      internalID: 2130591063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_11
+      name: bug_attack 1_5
       rect:
         serializedVersion: 2
         x: 32
@@ -350,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b7ffee57ecf07848b140eeb9bcc85e5
-      internalID: -1932395314
+      spriteID: 579bf066db225304ab36810fb84c8a11
+      internalID: 410364709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_12
+      name: bug_attack 1_6
       rect:
         serializedVersion: 2
         x: 64
@@ -371,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 533af1257e737f740ae03fdf2d4dccc9
-      internalID: 218952372
+      spriteID: ef27f7127ea76ad4499a83a93ae959a8
+      internalID: 724715366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_13
+      name: bug_attack 1_7
       rect:
         serializedVersion: 2
         x: 96
@@ -392,35 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a7ac8f181c585b4ab1ef19bb4cc7aa9
-      internalID: -198001762
+      spriteID: 88c526d2104ac39449fa8b812d665cd6
+      internalID: 2064681375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_14
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d01684f58bbc490428420bdfe1eb8f3a
-      internalID: 155836237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_15
+      name: bug_attack 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -434,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7601f9489d5bcd844b27d7be94f87072
-      internalID: -2025809729
+      spriteID: 18ef37e16a0822247b7da29d46932e0b
+      internalID: -1007228196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_16
+      name: bug_attack 1_9
       rect:
         serializedVersion: 2
         x: 32
@@ -455,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df4e003f10efedc43bcbc018fa6612bc
-      internalID: -1356167584
+      spriteID: 01def3e1d0105a6409c4bb595327ee0a
+      internalID: 840123296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_17
+      name: bug_attack 1_10
       rect:
         serializedVersion: 2
         x: 64
@@ -476,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 761152112ea616a4f9fb27625f0a1a92
-      internalID: -528369369
+      spriteID: fafcbcea86797a24aa52b2f55b7889d5
+      internalID: 2091650388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_18
+      name: bug_attack 1_11
       rect:
         serializedVersion: 2
         x: 96
@@ -497,35 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c4e3478f2ae9048a614847985ef14c
-      internalID: -1023208580
+      spriteID: 81f62b779749c1745a34f4f51ec72e19
+      internalID: -528636759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_19
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bf1e535286be9e4f9a6cd08d6885766
-      internalID: 29645008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PIXEL ON YOU, PIXEL ON YOUR COW_20
+      name: bug_attack 1_12
       rect:
         serializedVersion: 2
         x: 0
@@ -539,8 +371,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032705a3db992914f9cf785384b33bb4
-      internalID: -167169098
+      spriteID: 1199d933770121e45baf57bdbb7912b2
+      internalID: -231635056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bug_attack 1_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd6a5ac93063e647a32e623d78cfaa8
+      internalID: -1133404598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bug_attack 1_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ac8fb7fd85aad4ab3763f03b33963f
+      internalID: -1466348778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bug_attack 1_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e6ab9ea3558b645be21af9451e1788
+      internalID: -1460861381
       vertices: []
       indices: 
       edges: []
@@ -556,27 +451,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PIXEL ON YOU, PIXEL ON YOUR COW_1: -968078472
-      PIXEL ON YOU, PIXEL ON YOUR COW_4: 759735323
-      PIXEL ON YOU, PIXEL ON YOUR COW_18: -1023208580
-      PIXEL ON YOU, PIXEL ON YOUR COW_0: 1303742996
-      PIXEL ON YOU, PIXEL ON YOUR COW_16: -1356167584
-      PIXEL ON YOU, PIXEL ON YOUR COW_8: 575454503
-      PIXEL ON YOU, PIXEL ON YOUR COW_19: 29645008
-      PIXEL ON YOU, PIXEL ON YOUR COW_20: -167169098
-      PIXEL ON YOU, PIXEL ON YOUR COW_9: -1405294023
-      PIXEL ON YOU, PIXEL ON YOUR COW_13: -198001762
-      PIXEL ON YOU, PIXEL ON YOUR COW_7: 1785381909
-      PIXEL ON YOU, PIXEL ON YOUR COW_2: -1379312205
-      PIXEL ON YOU, PIXEL ON YOUR COW_10: -935981779
-      PIXEL ON YOU, PIXEL ON YOUR COW_6: 1177563277
-      PIXEL ON YOU, PIXEL ON YOUR COW_11: -1932395314
-      PIXEL ON YOU, PIXEL ON YOUR COW_14: 155836237
-      PIXEL ON YOU, PIXEL ON YOUR COW_5: -1489695145
-      PIXEL ON YOU, PIXEL ON YOUR COW_12: 218952372
-      PIXEL ON YOU, PIXEL ON YOUR COW_17: -528369369
-      PIXEL ON YOU, PIXEL ON YOUR COW_15: -2025809729
-      PIXEL ON YOU, PIXEL ON YOUR COW_3: 307824893
+      bug_attack 1_9: 840123296
+      bug_attack 1_0: 1848460232
+      bug_attack 1_5: 410364709
+      bug_attack 1_6: 724715366
+      bug_attack 1_14: -1466348778
+      bug_attack 1_8: -1007228196
+      bug_attack 1_4: 2130591063
+      bug_attack 1_12: -231635056
+      bug_attack 1_10: 2091650388
+      bug_attack 1_15: -1460861381
+      bug_attack 1_13: -1133404598
+      bug_attack 1_3: -1900596123
+      bug_attack 1_7: 2064681375
+      bug_attack 1_1: 517374183
+      bug_attack 1_2: -1758828521
+      bug_attack 1_11: -528636759
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
