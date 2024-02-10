@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rigidbody2d;
     BoxCollider2D boxcollider2d;
+    Animator animator;
 
     public LayerMask Ground_layermask;
     public float speed = 7.0f;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         boxcollider2d = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -48,12 +50,14 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
+            animator.Play("bug_run_left");
         }
 
         //go right
         if (Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
+            animator.Play("bug_run_right");
         }
 
         //stops the sliding a bit on ground
@@ -79,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGrounded()
     {
-        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 0.3f, Ground_layermask);        
+        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 3f, Ground_layermask);        
         return raycasthit2d.collider != null;
     }
 
