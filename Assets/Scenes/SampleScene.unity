@@ -718,7 +718,16 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2325435913658915647, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: maxdoublejumps
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325435913658915647, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: percentDisplay
+      value: 
+      objectReference: {fileID: 665402680}
+    m_RemovedComponents:
+    - {fileID: 320511370639023646, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
 --- !u!1 &1466588209 stripped
 GameObject:
@@ -782,9 +791,9 @@ BoxCollider2D:
   m_Offset: {x: 0.039847158, y: -0.34156662}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.3096447, y: 0.3237446}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
