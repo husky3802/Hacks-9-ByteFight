@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8f3743644615c814886fbd9b4426815c
+  - enabled: 1
+    path: Assets/Scenes/ByteWinScreen.unity
+    guid: 3192934ad06db2b408b2949119f056e3
   m_configObjects: {}
