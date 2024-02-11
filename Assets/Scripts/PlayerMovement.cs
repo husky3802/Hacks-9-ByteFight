@@ -17,12 +17,9 @@ public class PlayerMovement : MonoBehaviour
     public float jump = 7.0f;
     public int maxdoublejumps = 1;
     int doublejumps;
-<<<<<<< Updated upstream
     float time = 1;
     bool prevDirectionFacing = false; //false = left
     bool animationLocked = false;
-=======
->>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump);
             doublejumps--;
-            //Debug.Log(doublejumps);
+            Debug.Log(doublejumps);
         }
 
 
