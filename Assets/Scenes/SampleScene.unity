@@ -916,10 +916,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 713437456}
-  - component: {fileID: 713437457}
+  - component: {fileID: 910674307}
+  - component: {fileID: 910674306}
+  - component: {fileID: 910674305}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: BiteHB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4621,6 +4622,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.39860702, y: 0.2756061}
   m_EdgeRadius: 0
+--- !u!4 &1466588218 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2634483967469176586, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
+  m_PrefabInstance: {fileID: 1839076612019129398}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1688722614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5230,6 +5236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Byte
       objectReference: {fileID: 0}
+    - target: {fileID: 7010298800738821065, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
+      propertyPath: biteAttack
+      value: 
+      objectReference: {fileID: 910674305}
     - target: {fileID: 7010298800738821065, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
       propertyPath: maxdoublejumps
       value: 1
