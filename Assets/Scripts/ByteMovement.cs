@@ -12,6 +12,7 @@ public class ByteMovement : MonoBehaviour
     BoxCollider2D boxcollider2d;
     Animator animator;
     Animation anim;
+    AudioSource attackSound;
 
 
 
@@ -38,6 +39,7 @@ public class ByteMovement : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         boxcollider2d = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+        attackSound = GetComponent<AudioSource>();
 
     }
 
@@ -79,6 +81,7 @@ public class ByteMovement : MonoBehaviour
         {
             isAttacking = true;
             animator.SetTrigger("attack");
+            attackSound.Play();
         }
         animator.SetFloat("velocity", rigidbody2d.velocity.x);
 

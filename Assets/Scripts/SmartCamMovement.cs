@@ -19,9 +19,9 @@ public class SmartCamMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         transform.position = new Vector3((GameObject.Find("Bug").transform.position.x + GameObject.Find("Byte").transform.position.x) / 2, camera.transform.position.y, camera.transform.position.z);
-        camera.orthographicSize = Mathf.Max(5f, Mathf.Abs((GameObject.Find("Bug").transform.position.x - GameObject.Find("Byte").transform.position.x) / 2) + 1f);
+        camera.orthographicSize = Mathf.Max(9f, Mathf.Min(Mathf.Abs((GameObject.Find("Bug").transform.position.x - GameObject.Find("Byte").transform.position.x) / 2) + 1f, 12f));
+  
 
     }
 }

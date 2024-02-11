@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D boxcollider2d;
     Animator animator;
     Animation anim;
+    AudioSource attackSound;
 
     public TMP_Text percentDisplay;
     public LayerMask Ground_layermask;
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         boxcollider2d = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+        attackSound = GetComponent<AudioSource>();
 
     }
 
@@ -75,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
         //attack
         if (Input.GetKey(KeyCode.M) && !isAttacking)
         {
+            attackSound.Play();
             isAttacking = true;
             animator.SetTrigger("attack");
         }
