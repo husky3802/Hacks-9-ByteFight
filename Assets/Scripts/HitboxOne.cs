@@ -64,13 +64,13 @@ public class HitboxOne : MonoBehaviour
             Debug.Log("if was true");
             PlayerMovement bug = other.GetComponent<PlayerMovement>();
             bug.percent += 77;
-            
+            //Debug.Log("root = " + Mathf.Sqrt(bug.percent));
             if (lastwasright)
             {
-                bug.rigidbody2d.velocity = new Vector2(0.3f * bug.percent, 0.2f * bug.percent);
+                bug.rigidbody2d.velocity = new Vector2(0.05f * bug.percent, 0.07f * bug.percent / 2f);
             } else
             {
-                bug.rigidbody2d.velocity = new Vector2(-0.3f * bug.percent, 0.2f * bug.percent);
+                bug.rigidbody2d.velocity = new Vector2(-0.5f * bug.percent, 0.07f * bug.percent / 2f);
             }
         }
     }
