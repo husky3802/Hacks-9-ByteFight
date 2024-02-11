@@ -801,6 +801,18 @@ PrefabInstance:
       propertyPath: percentDisplay
       value: 
       objectReference: {fileID: 665402680}
+    - target: {fileID: 2582257913158741137, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621484502182038181, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621484502182038181, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: m_Size.y
+      value: 0.45
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 320511370639023646, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
