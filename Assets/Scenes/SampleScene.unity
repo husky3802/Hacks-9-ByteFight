@@ -719,8 +719,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2325435913658915647, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: attackDelay
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325435913658915647, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
       propertyPath: maxdoublejumps
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2325435913658915647, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
       propertyPath: percentDisplay
@@ -788,7 +792,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.039847158, y: -0.34156662}
+  m_Offset: {x: 0.039847165, y: -0.3182956}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.3096447, y: 0.3237446}
@@ -799,7 +803,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39860702, y: 0.3221476}
+  m_Size: {x: 0.39860702, y: 0.2756061}
   m_EdgeRadius: 0
 --- !u!1 &1688722614
 GameObject:
@@ -1074,5 +1078,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Byte
       objectReference: {fileID: 0}
+    - target: {fileID: 7010298800738821065, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
+      propertyPath: maxdoublejumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010298800738821065, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
+      propertyPath: percentDisplay
+      value: 
+      objectReference: {fileID: 1688722617}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}

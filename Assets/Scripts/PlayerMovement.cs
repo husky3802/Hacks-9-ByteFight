@@ -23,7 +23,7 @@ using TMPro;
     int doublejumps;
     bool isAttacking = false;
     float time = 0;
-    public float attackDelay = 2f;
+    public float attackDelay = 0.7f;
     int percent = 0;
     //bool prevDirectionFacing = false; //false = left
     
@@ -83,7 +83,7 @@ using TMPro;
         if (rigidbody2d.velocity == new Vector2(0,0))
         {
             animator.SetBool("isMoving", false);
-            Debug.Log("idling");
+            //Debug.Log("idling");
         } else
         {
             animator.SetBool("isMoving", true);
@@ -128,7 +128,7 @@ using TMPro;
     
     bool isGrounded()
     {
-        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.7f, Ground_layermask);    
+        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.8f, Ground_layermask);    
         return raycasthit2d.collider != null;
     }
 

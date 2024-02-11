@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
 public class ByteMovement : MonoBehaviour
 {
@@ -12,14 +13,21 @@ public class ByteMovement : MonoBehaviour
     Animator animator;
     Animation anim;
 
+
+
+    public TMP_Text percentDisplay;
     public LayerMask Ground_layermask;
     public float speed = 7.0f;
     public float jump = 7.0f;
     public int maxdoublejumps = 1;
     int doublejumps;
-    float time = 1;
-    bool prevDirectionFacing = false; //false = left
-    bool animationLocked = false;
+    bool isAttacking = false;
+    float time = 0;
+    public float attackDelay = 0.7f;
+    int percent = 0;
+
+    //bool prevDirectionFacing = false; //false = left
+    //bool animationLocked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +43,14 @@ public class ByteMovement : MonoBehaviour
     {
         // Time.deltaTime
 
+        percentDisplay.text = percent - percent % 10 + "." + percent % 10 + "%";
+
         // Jump
         if (Input.GetKeyDown(KeyCode.W) && (isGrounded() || doublejumps >= 1))
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump);
             doublejumps--;
-            Debug.Log(doublejumps);
+            //Debug.Log(doublejumps);
         }
 
 
@@ -51,9 +61,20 @@ public class ByteMovement : MonoBehaviour
     void FixedUpdate()
     {
 
-        //attack
-        if (Input.GetKey(KeyCode.R))
+        if (isAttacking)
         {
+            time += Time.fixedDeltaTime;
+            if (time >= attackDelay)
+            {
+                isAttacking = false;
+                time = 0;
+            }
+        }
+
+        //attack
+        if (Input.GetKey(KeyCode.R) && !isAttacking)
+        {
+            isAttacking = true;
             animator.SetTrigger("attack");
         }
         animator.SetFloat("velocity", rigidbody2d.velocity.x);
@@ -62,7 +83,7 @@ public class ByteMovement : MonoBehaviour
         if (rigidbody2d.velocity == new Vector2(0, 0))
         {
             animator.SetBool("isMoving", false);
-            Debug.Log("idling");
+            //Debug.Log("idling");
         }
         else
         {
@@ -73,14 +94,14 @@ public class ByteMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
-            prevDirectionFacing = false;
+            //prevDirectionFacing = false;
         }
 
         //go right
         if (Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
-            prevDirectionFacing = true;
+            //prevDirectionFacing = true;
         }
 
         //stops the sliding a bit on ground
@@ -99,7 +120,7 @@ public class ByteMovement : MonoBehaviour
         if (isGrounded() && doublejumps != maxdoublejumps)
         {
             doublejumps = maxdoublejumps;
-            Debug.Log(doublejumps);
+            //Debug.Log(doublejumps);
         }
 
     }
