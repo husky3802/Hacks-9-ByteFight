@@ -7,7 +7,7 @@ using TMPro;
 
 
 
-    public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     Rigidbody2D rigidbody2d;
@@ -27,7 +27,6 @@ using TMPro;
     int percent = 0;
     public ScratchAttack scratchAttack;
     bool prevDirectionFacing = false; //false = left
-    
     //bool animationLocked = false;  // This variable seems like it was intended for later use
 
     // Start is called before the first frame update
@@ -36,7 +35,7 @@ using TMPro;
         rigidbody2d = GetComponent<Rigidbody2D>();
         boxcollider2d = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
-  
+
     }
 
     // Update is called once per frame
@@ -70,7 +69,7 @@ using TMPro;
                 time = 0;
             }
         }
-            
+
 
         //attack
         if (Input.GetKey(KeyCode.M) && !isAttacking)
@@ -81,11 +80,12 @@ using TMPro;
         animator.SetFloat("velocity", rigidbody2d.velocity.x);
 
 
-        if (rigidbody2d.velocity == new Vector2(0,0))
+        if (rigidbody2d.velocity == new Vector2(0, 0))
         {
             animator.SetBool("isMoving", false);
             //Debug.Log("idling");
-        } else
+        }
+        else
         {
             animator.SetBool("isMoving", true);
         }
@@ -120,16 +120,16 @@ using TMPro;
 
         // limit the number of jumps
         if (isGrounded() && doublejumps != maxdoublejumps)
-        {            
+        {
             doublejumps = maxdoublejumps;
             //Debug.Log(doublejumps);
         }
-        
+
     }
-    
+
     bool isGrounded()
     {
-        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.8f, Ground_layermask);    
+        RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.8f, Ground_layermask);
         return raycasthit2d.collider != null;
     }
 

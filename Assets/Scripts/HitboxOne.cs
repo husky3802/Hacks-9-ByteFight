@@ -7,7 +7,7 @@ using UnityEngine;
 public class HitboxOne : MonoBehaviour
 {
 
- 
+
 
     //public AttackDirection attackDirection;
 
@@ -15,14 +15,14 @@ public class HitboxOne : MonoBehaviour
     //Vector2 RightAttackOffset;
     bool lastwasright = true;
 
-    private void Start ()
+    private void Start()
     {
         biteCollider = GetComponent<Collider2D>();
         biteCollider.enabled = false;
         //RightAttackOffset = transform.position;
     }
 
-    
+
 
     public void AttackRight()
     {
@@ -33,7 +33,7 @@ public class HitboxOne : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x + 5.5f, transform.position.y);
         }
-        
+
 
         lastwasright = true;
     }

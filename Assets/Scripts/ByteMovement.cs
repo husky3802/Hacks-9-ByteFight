@@ -141,7 +141,8 @@ public class ByteMovement : MonoBehaviour
         if (facingRight)
         {
             biteAttack.AttackRight();
-        } else
+        }
+        else
         {
             biteAttack.AttackLeft();
         }
@@ -155,4 +156,3 @@ public class ByteMovement : MonoBehaviour
     }
 
 }
-
