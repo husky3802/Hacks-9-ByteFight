@@ -148,5 +148,11 @@ public class ByteMovement : MonoBehaviour
 
     }
 
+
+    public void BiteEnd()
+    {
+        biteAttack.StopAttack();
+    }
+
 }
 
