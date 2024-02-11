@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rigidbody2d;
     BoxCollider2D boxcollider2d;
     Animator animator;
+    Animation anim;
 
     public LayerMask Ground_layermask;
     public float speed = 7.0f;
@@ -17,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     public int maxdoublejumps = 1;
     int doublejumps;
     float time = 1;
+    bool prevDirectionFacing = false; //false = left
+    bool animationLocked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +27,16 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         boxcollider2d = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+  
     }
 
     // Update is called once per frame
     void Update()
     {
         // Time.deltaTime
+
+
+
 
         // Jump
         if (Input.GetKeyDown(KeyCode.W) && (isGrounded() || doublejumps >= 1))
@@ -46,18 +53,37 @@ public class PlayerMovement : MonoBehaviour
     // Update every fixed amount of times per second
     void FixedUpdate()
     {
+
+
+        //attack
+        if (Input.GetKey(KeyCode.M))
+        {
+            animator.SetTrigger("attack");
+        }
+        animator.SetFloat("velocity", rigidbody2d.velocity.x);
+
+
+        if (rigidbody2d.velocity == new Vector2(0,0))
+        {
+            animator.SetBool("isMoving", false);
+            Debug.Log("idling");
+        } else
+        {
+            animator.SetBool("isMoving", true);
+        }
+
         //go left
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
-            animator.Play("bug_run_left");
+            prevDirectionFacing = false;
         }
 
         //go right
         if (Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
-            animator.Play("bug_run_right");
+            prevDirectionFacing = true;
         }
 
         //stops the sliding a bit on ground
@@ -85,6 +111,20 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.7f, Ground_layermask);    
         return raycasthit2d.collider != null;
+    }
+
+    IEnumerator ExecuteAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Call your function here
+        MyFunction();
+    }
+
+    void MyFunction()
+    {
+        anim["bug_idle_right"].enabled = true;
+        anim["bug_idle_left"].enabled = true;
     }
 
 

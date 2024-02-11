@@ -436,6 +436,10 @@ PrefabInstance:
       propertyPath: testvar
       value: 1.7
       objectReference: {fileID: 0}
+    - target: {fileID: 320511370639023646, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: maxdoublejumps
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 320511370639023647, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
       propertyPath: m_GravityScale
       value: 4
@@ -480,11 +484,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2634483967469176586, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.33
+      value: -6.35
       objectReference: {fileID: 0}
     - target: {fileID: 2634483967469176586, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 2634483967469176586, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
       propertyPath: m_LocalPosition.z
@@ -520,7 +524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339753364473982605, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
       propertyPath: m_Name
-      value: byte_attack_0
+      value: Byte
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
