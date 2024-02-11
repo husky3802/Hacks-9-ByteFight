@@ -17,9 +17,10 @@ public class PlayerMovement : MonoBehaviour
     public float jump = 7.0f;
     public int maxdoublejumps = 1;
     int doublejumps;
-    float time = 1;
-    bool prevDirectionFacing = false; //false = left
-    bool animationLocked = false;
+    //float time = 1;
+    //bool prevDirectionFacing = false; //false = left
+    
+    //bool animationLocked = false;  // This variable seems like it was intended for later use
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump);
             doublejumps--;
-            Debug.Log(doublejumps);
         }
 
 
@@ -76,14 +76,16 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
-            prevDirectionFacing = false;
+            //prevDirectionFacing = false;
+            animator.SetBool("isFacingRight", false);
         }
 
         //go right
         if (Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
-            prevDirectionFacing = true;
+            //prevDirectionFacing = true;
+            animator.SetBool("isFacingRight", true);
         }
 
         //stops the sliding a bit on ground
@@ -102,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded() && doublejumps != maxdoublejumps)
         {            
             doublejumps = maxdoublejumps;
-            Debug.Log(doublejumps);
+            //Debug.Log(doublejumps);
         }
         
     }
