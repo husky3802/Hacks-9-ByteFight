@@ -1063,6 +1063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bug
       objectReference: {fileID: 0}
+    - target: {fileID: 320511370639023635, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
+      propertyPath: m_TagString
+      value: Bug
+      objectReference: {fileID: 0}
     - target: {fileID: 320511370639023644, guid: 1e071e8e53917bc419785c9b099d3db3, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5248,6 +5252,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339753364473982605, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
       propertyPath: m_Name
+      value: Byte
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339753364473982605, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}
+      propertyPath: m_TagString
       value: Byte
       objectReference: {fileID: 0}
     - target: {fileID: 7010298800738821065, guid: 23664702d98a48645b4660c1a9d37e65, type: 3}

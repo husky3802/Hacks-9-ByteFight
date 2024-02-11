@@ -8,7 +8,7 @@ using TMPro;
 public class ByteMovement : MonoBehaviour
 {
 
-    Rigidbody2D rigidbody2d;
+    public Rigidbody2D rigidbody2d;
     BoxCollider2D boxcollider2d;
     Animator animator;
     Animation anim;
@@ -24,7 +24,7 @@ public class ByteMovement : MonoBehaviour
     bool isAttacking = false;
     float time = 0;
     public float attackDelay = 0.7f;
-    int percent = 0;
+    public int percent = 0;
     bool facingRight = true;
 
     public HitboxOne biteAttack;
@@ -46,8 +46,8 @@ public class ByteMovement : MonoBehaviour
     {
         // Time.deltaTime
 
-        percentDisplay.text = percent - percent % 10 + "." + percent % 10 + "%";
-
+        percentDisplay.text = percent / 10 + "." + percent % 10 + "%";
+        //percentDisplay.text = "hi";
         // Jump
         if (Input.GetKeyDown(KeyCode.W) && (isGrounded() || doublejumps >= 1))
         {

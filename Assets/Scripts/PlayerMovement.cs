@@ -10,7 +10,7 @@ using TMPro;
 public class PlayerMovement : MonoBehaviour
 {
 
-    Rigidbody2D rigidbody2d;
+    public Rigidbody2D rigidbody2d;
     BoxCollider2D boxcollider2d;
     Animator animator;
     Animation anim;
@@ -24,9 +24,10 @@ public class PlayerMovement : MonoBehaviour
     bool isAttacking = false;
     float time = 0;
     public float attackDelay = 0.7f;
-    int percent = 0;
+    public int percent = 0;
     public ScratchAttack scratchAttack;
-    bool prevDirectionFacing = false; //false = left
+    //bool prevDirectionFacing = false; //false = left
+
     //bool animationLocked = false;  // This variable seems like it was intended for later use
 
     // Start is called before the first frame update
@@ -42,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Time.deltaTime
-        percentDisplay.text = percent - percent % 10 + "." + percent % 10 + "%";
+        percentDisplay.text = percent / 10 + "." + percent % 10 + "%";
 
 
         // Jump
@@ -94,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
-            prevDirectionFacing = false;
+            //prevDirectionFacing = false;
             animator.SetBool("isFacingRight", false);
         }
 
@@ -102,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
-            prevDirectionFacing = true;
+            //prevDirectionFacing = true;
             animator.SetBool("isFacingRight", true);
         }
 
