@@ -56,4 +56,16 @@ public class HitboxOne : MonoBehaviour
         biteCollider.enabled = false;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("collided");
+        if (other.tag == "Bug")
+        {
+            Debug.Log("if was true");
+            PlayerMovement bug = other.GetComponent<PlayerMovement>();
+            bug.percent += 77;
+            bug.rigidbody2d.velocity = new Vector2(0.3f*bug.percent, 0.2f * bug.percent);
+        }
+    }
+
 }
