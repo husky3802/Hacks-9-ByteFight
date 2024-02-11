@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
-public class PlayerMovement : MonoBehaviour
+
+
+    public class PlayerMovement : MonoBehaviour
 {
 
     Rigidbody2D rigidbody2d;
@@ -12,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     Animation anim;
 
+    public TMP_Text percentDisplay;
     public LayerMask Ground_layermask;
     public float speed = 7.0f;
     public float jump = 7.0f;
@@ -20,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     bool isAttacking = false;
     float time = 0;
     public float attackDelay = 2f;
+    int percent = 0;
     //bool prevDirectionFacing = false; //false = left
     
     //bool animationLocked = false;  // This variable seems like it was intended for later use
@@ -37,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Time.deltaTime
-
+        percentDisplay.text = percent - percent % 10 + "." + percent % 10 + "%";
 
 
 
