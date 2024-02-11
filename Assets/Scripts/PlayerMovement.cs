@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
     public float jump = 7.0f;
     public int maxdoublejumps = 1;
     int doublejumps;
-    //float time = 1;
+    bool isAttacking = false;
+    float time = 0;
+    public float attackDelay = 2f;
     //bool prevDirectionFacing = false; //false = left
     
     //bool animationLocked = false;  // This variable seems like it was intended for later use
@@ -54,10 +56,21 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
 
+        if (isAttacking)
+        {
+            time += Time.fixedDeltaTime;
+            if (time >= attackDelay)
+            {
+                isAttacking = false;
+                time = 0;
+            }
+        }
+            
 
         //attack
-        if (Input.GetKey(KeyCode.M))
+        if (Input.GetKey(KeyCode.M) && !isAttacking)
         {
+            isAttacking = true;
             animator.SetTrigger("attack");
         }
         animator.SetFloat("velocity", rigidbody2d.velocity.x);
