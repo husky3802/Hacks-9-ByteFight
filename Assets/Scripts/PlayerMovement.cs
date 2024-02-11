@@ -45,7 +45,6 @@ using TMPro;
         percentDisplay.text = percent - percent % 10 + "." + percent % 10 + "%";
 
 
-
         // Jump
         if (Input.GetKeyDown(KeyCode.UpArrow) && (isGrounded() || doublejumps >= 1))
         {

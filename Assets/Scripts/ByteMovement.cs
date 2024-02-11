@@ -52,7 +52,7 @@ public class ByteMovement : MonoBehaviour
     {
 
         //attack
-        if (Input.GetKey(KeyCode.M))
+        if (Input.GetKey(KeyCode.R))
         {
             animator.SetTrigger("attack");
         }
@@ -90,7 +90,7 @@ public class ByteMovement : MonoBehaviour
         }
 
         //stops momentum in the air if you dont hold a direction
-        if (!isGrounded() && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.S))
+        if (!isGrounded() && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x * 0.98f, rigidbody2d.velocity.y);
         }
