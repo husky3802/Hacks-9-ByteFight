@@ -42,4 +42,24 @@ public class ScratchAttack : MonoBehaviour
     {
         scratchCollider.enabled = false;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //Debug.Log("collided");
+        if (other.tag == "Byte")
+        {
+            //Debug.Log("if was true");
+            ByteMovement dog = other.GetComponent<ByteMovement>();
+            dog.percent += 77;
+            if (lastwasright)
+            {
+                dog.rigidbody2d.velocity = new Vector2(0.3f * dog.percent, 0.2f * dog.percent);
+            } else
+            {
+                dog.rigidbody2d.velocity = new Vector2(-0.3f * dog.percent, 0.2f * dog.percent);
+            }
+            
+        }
+    }
+
 }
