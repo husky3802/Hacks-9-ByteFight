@@ -25,9 +25,6 @@ public class ByteMovement : MonoBehaviour
     float time = 0;
     public float attackDelay = 0.7f;
     int percent = 0;
-    bool facingRight = true;
-
-    public HitboxOne biteAttack;
 
     //bool prevDirectionFacing = false; //false = left
     //bool animationLocked = false;
@@ -97,7 +94,6 @@ public class ByteMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
-            facingRight = false;
             //prevDirectionFacing = false;
         }
 
@@ -105,7 +101,6 @@ public class ByteMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
-            facingRight = true;
             //prevDirectionFacing = true;
         }
 
@@ -134,24 +129,6 @@ public class ByteMovement : MonoBehaviour
     {
         RaycastHit2D raycasthit2d = Physics2D.BoxCast(rigidbody2d.position, boxcollider2d.bounds.size, 0f, Vector2.down, 1.7f, Ground_layermask);
         return raycasthit2d.collider != null;
-    }
-
-    public void BiteAttack()
-    {
-        if (facingRight)
-        {
-            biteAttack.AttackRight();
-        } else
-        {
-            biteAttack.AttackLeft();
-        }
-
-    }
-
-
-    public void BiteEnd()
-    {
-        biteAttack.StopAttack();
     }
 
 }
