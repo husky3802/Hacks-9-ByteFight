@@ -51,8 +51,15 @@ public class PlayerMovement : MonoBehaviour
         // Jump
         if (Input.GetKeyDown(KeyCode.UpArrow) && (isGrounded() || doublejumps >= 1))
         {
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump);
+            
             doublejumps--;
+            if (rigidbody2d.velocity.y >= jump*1.5)
+            {
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump);
+            } else
+            {
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jump + rigidbody2d.velocity.y);
+            }
         }
 
 
@@ -97,17 +104,36 @@ public class PlayerMovement : MonoBehaviour
         //go left
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
-            //prevDirectionFacing = false;
-            animator.SetBool("isFacingRight", false);
+            if (Mathf.Abs(rigidbody2d.velocity.x) <= speed + 1f)
+            {
+                rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
+                //prevDirectionFacing = false;
+                animator.SetBool("isFacingRight", false);
+            } else
+            {
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x - 0.5f, rigidbody2d.velocity.y);
+                //prevDirectionFacing = false;
+                animator.SetBool("isFacingRight", false);
+            }
+            
         }
 
         //go right
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
-            //prevDirectionFacing = true;
-            animator.SetBool("isFacingRight", true);
+            if (Mathf.Abs(rigidbody2d.velocity.x) <= speed + 1f)
+            {
+                rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
+                //prevDirectionFacing = true;
+                animator.SetBool("isFacingRight", true);
+            }
+            else
+            {
+                rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x + 0.5f, rigidbody2d.velocity.y);
+                //prevDirectionFacing = true;
+                animator.SetBool("isFacingRight", true);
+            }
+            
         }
 
         //stops the sliding a bit on ground
