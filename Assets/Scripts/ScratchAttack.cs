@@ -53,10 +53,10 @@ public class ScratchAttack : MonoBehaviour
             dog.percent += 77;
             if (lastwasright)
             {
-                dog.rigidbody2d.velocity = new Vector2(0.3f * dog.percent, 0.2f * dog.percent);
+                dog.rigidbody2d.velocity = new Vector2(0.04f * dog.percent, 0.1f * dog.percent / 2f);
             } else
             {
-                dog.rigidbody2d.velocity = new Vector2(-0.3f * dog.percent, 0.2f * dog.percent);
+                dog.rigidbody2d.velocity = new Vector2(-0.04f * dog.percent, 0.1f * dog.percent / 2f);
             }
             
         }
