@@ -10,10 +10,10 @@ public class Bound : MonoBehaviour
     {
         if (other.tag == "Byte")
         {
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadSceneAsync(3);
         } else if (other.tag == "Bug")
         {
-            SceneManager.LoadSceneAsync(3);
+            SceneManager.LoadSceneAsync(2);
         }
     }
 }
