@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ByteWinScreen.unity
     guid: 3192934ad06db2b408b2949119f056e3
+  - enabled: 1
+    path: Assets/Scenes/bugWinScreen.unity
+    guid: 92065886b7cd2514a938bf6729633183
   m_configObjects: {}

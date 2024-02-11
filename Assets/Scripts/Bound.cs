@@ -13,7 +13,7 @@ public class Bound : MonoBehaviour
             SceneManager.LoadSceneAsync(2);
         } else if (other.tag == "Bug")
         {
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadSceneAsync(3);
         }
     }
 }
